@@ -1,17 +1,11 @@
-//
-//  ViewController.swift
-//  CafeCollectionSchmidt
-//
-//  Created by AVA SCHMIDT on 9/11/24.
-//
-
+//starting cafe mini app!
 import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 
