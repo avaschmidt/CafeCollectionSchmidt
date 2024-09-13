@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         var i = 0
         while i<foodNames.count{
             print("Looping")
-            menuOutlet.text += "\(foodNames[i]) : \(foodPrices[i])"
+            menuOutlet.text += "\n\(foodNames[i]) : \(foodPrices[i])"
             i = i + 1 }
         
        }
