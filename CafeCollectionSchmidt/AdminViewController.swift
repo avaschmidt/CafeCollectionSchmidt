@@ -1,6 +1,12 @@
 import UIKit
 
 class AdminViewController: UIViewController {
+
+    @IBOutlet weak var labelOutlet: UILabel!
+    
+  
+    
+    
     @IBOutlet weak var passwordOutlet: UITextField!
     var pass = "AvaIsCool"
     
@@ -16,6 +22,7 @@ class AdminViewController: UIViewController {
         }
         else{
             print("No")
+            labelOutlet.text = "Wrong Password"
         }
     }
     
