@@ -21,7 +21,10 @@ class ChangesViewController: UIViewController {
     }
     @IBAction func addMenuAction(_ sender: UIButton) {
         for i in 0...foodNames.count-1{
-            
+            if addMenuOutlet.text != nil && addPriceOutlet.text != nil{
+                foodNames.append(addMenuOutlet.text!)
+                foodPrices.append(Double(addPriceOutlet.text!)!)
+            }
         }
             
         
