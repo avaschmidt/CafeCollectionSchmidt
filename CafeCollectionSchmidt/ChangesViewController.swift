@@ -26,10 +26,23 @@ class ChangesViewController: UIViewController {
                 foodPrices.append(Double(addPriceOutlet.text!)!)
             }
         }
+        
             
         
     }
     
+    
+    
+    
+    
+    
+    
+    
+    @IBAction func reloadMenuAction(_ sender: UIButton) {
+        
+      
+        
+    }
     
     
 

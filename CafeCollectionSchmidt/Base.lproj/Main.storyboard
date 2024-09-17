@@ -13,47 +13,47 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CafeCollectionSchmidt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="pjQ-T2-XSs">
-                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caf-A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdE-45-tOL">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="60.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="64"/>
                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="39"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQe-mH-y42">
-                                        <rect key="frame" x="0.0" y="61.333333333333329" width="393" height="29"/>
+                                        <rect key="frame" x="0.0" y="65" width="393" height="31"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EnR-Sz-nHs">
-                                        <rect key="frame" x="0.0" y="91.333333333333343" width="393" height="238.00000000000003"/>
+                                        <rect key="frame" x="0.0" y="97.000000000000014" width="393" height="252.33333333333337"/>
                                         <color key="backgroundColor" red="0.90225630300000004" green="1" blue="0.91907518290000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Cart:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCn-RC-wFB">
-                                        <rect key="frame" x="0.0" y="330.33333333333331" width="393" height="29"/>
+                                        <rect key="frame" x="0.0" y="350.33333333333331" width="393" height="31"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rJ-v3-YH0">
-                                        <rect key="frame" x="0.0" y="360.33333333333331" width="393" height="34"/>
+                                        <rect key="frame" x="0.0" y="382.33333333333331" width="393" height="36"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Item Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sBj-aF-aG3">
-                                                <rect key="frame" x="0.0" y="0.0" width="337" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="337" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="QTY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="acN-if-Wr4">
-                                                <rect key="frame" x="337" y="0.0" width="56" height="34"/>
+                                                <rect key="frame" x="337" y="0.0" width="56" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -63,7 +63,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2H2-bB-4bp">
-                                        <rect key="frame" x="0.0" y="395.33333333333331" width="393" height="31.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="419.33333333333331" width="393" height="33.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Add To Cart">
                                             <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
@@ -74,26 +74,26 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSv-O3-ODz">
-                                        <rect key="frame" x="0.0" y="427.66666666666669" width="393" height="39.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="453.66666666666669" width="393" height="42"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n3j-ww-6ui">
-                                        <rect key="frame" x="0.0" y="468.33333333333343" width="393" height="237.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="496.66666666666669" width="393" height="252.66666666666669"/>
                                         <color key="backgroundColor" red="0.90225630300000004" green="1" blue="0.91907518290000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADMIN ONLY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqw-pt-UDK">
-                                        <rect key="frame" x="0.0" y="707" width="393" height="20.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="750.33333333333337" width="393" height="21.666666666666629"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0G-js-19E">
-                                        <rect key="frame" x="0.0" y="728.33333333333337" width="393" height="39.666666666666629"/>
+                                        <rect key="frame" x="0.0" y="773" width="393" height="42"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Click To Access">
                                             <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
@@ -104,7 +104,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faW-gj-CLk">
-                                        <rect key="frame" x="0.0" y="769" width="393" height="24"/>
+                                        <rect key="frame" x="0.0" y="816" width="393" height="26"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -133,6 +133,7 @@
                             <constraint firstItem="pjQ-T2-XSs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TG7-gX-vkv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Jal-hm-TIP"/>
                     <connections>
                         <outlet property="addOutlet" destination="2H2-bB-4bp" id="InU-Wo-3ZH"/>
                         <outlet property="cartOutlet" destination="n3j-ww-6ui" id="iVL-Pn-COt"/>
@@ -299,8 +300,24 @@
                                             <action selector="deleteMenuAction:" destination="ja0-0D-YFj" eventType="touchUpInside" id="kFA-1K-hyi"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJu-pe-bK3">
+                                        <rect key="frame" x="0.0" y="507" width="393" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20d-A1-Zeg">
+                                        <rect key="frame" x="0.0" y="557" width="393" height="34.333333333333371"/>
+                                        <color key="tintColor" red="0.78433070230000002" green="0.50333891389999996" blue="0.5070149155" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Reload Menu"/>
+                                        <connections>
+                                            <action selector="reloadMenuAction:" destination="ja0-0D-YFj" eventType="touchUpInside" id="hJJ-LA-1H9"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="p1i-w7-8Zb"/>
+                                        </connections>
+                                    </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mek-K7-0rQ">
-                                        <rect key="frame" x="0.0" y="507" width="393" height="335"/>
+                                        <rect key="frame" x="0.0" y="591.33333333333337" width="393" height="250.66666666666663"/>
                                         <color key="backgroundColor" red="1" green="0.64174322439999998" blue="0.64643002500000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -310,7 +327,9 @@
                                 <constraints>
                                     <constraint firstItem="Hd4-7Y-mZq" firstAttribute="height" secondItem="8TT-Cc-gIT" secondAttribute="height" multiplier="0.2" id="CEO-Ql-Ivh"/>
                                     <constraint firstItem="EVY-02-7Wt" firstAttribute="height" secondItem="8TT-Cc-gIT" secondAttribute="height" multiplier="0.2" id="Iti-aK-OJI"/>
+                                    <constraint firstItem="qJu-pe-bK3" firstAttribute="height" secondItem="8TT-Cc-gIT" secondAttribute="height" multiplier="0.0593824" id="SXm-BM-sum"/>
                                     <constraint firstItem="rnp-Js-wzP" firstAttribute="height" secondItem="8TT-Cc-gIT" secondAttribute="height" multiplier="0.0407759" id="XxV-v8-42i"/>
+                                    <constraint firstItem="20d-A1-Zeg" firstAttribute="height" secondItem="8TT-Cc-gIT" secondAttribute="height" multiplier="0.0407759" id="kyn-sn-VMj"/>
                                     <constraint firstItem="emh-Wu-HJd" firstAttribute="height" secondItem="8TT-Cc-gIT" secondAttribute="height" multiplier="0.0407759" id="l94-kG-etG"/>
                                     <constraint firstItem="Yvc-HZ-aBB" firstAttribute="height" secondItem="8TT-Cc-gIT" secondAttribute="height" multiplier="0.0399842" id="sCs-AB-BTp"/>
                                     <constraint firstItem="5M9-7F-TuF" firstAttribute="height" secondItem="kGw-G0-NI6" secondAttribute="height" id="vLR-QB-O9u"/>
