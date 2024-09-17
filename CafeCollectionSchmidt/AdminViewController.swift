@@ -19,6 +19,7 @@ class AdminViewController: UIViewController {
     @IBAction func loginAction(_ sender: Any) {
         if passwordOutlet.text == pass{
             print("Yes")
+            performSegue(withIdentifier: "loginSegue", sender: nil)
         }
         else{
             print("No")

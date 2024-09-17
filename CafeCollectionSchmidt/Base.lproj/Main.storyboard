@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -176,7 +177,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Huj-rW-axl">
                                         <rect key="frame" x="0.0" y="113.66666666666667" width="393" height="34.333333333333329"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button">
+                                        <buttonConfiguration key="configuration" style="filled" title="Enter">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.51372551919999998" green="0.66274511810000003" blue="0.54509806630000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
@@ -186,7 +187,7 @@
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wta-eE-aOc">
                                         <rect key="frame" x="0.0" y="148" width="393" height="20.333333333333343"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="19"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -219,26 +220,129 @@
                     <connections>
                         <outlet property="labelOutlet" destination="Wta-eE-aOc" id="tpI-Aj-WAF"/>
                         <outlet property="passwordOutlet" destination="1X5-cJ-xVk" id="Aye-Gm-TxT"/>
+                        <segue destination="ja0-0D-YFj" kind="show" identifier="loginSegue" id="EA3-Ft-dQA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nn-cB-kk2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="763" y="4"/>
+            <point key="canvasLocation" x="781" y="268"/>
         </scene>
-        <!--View Controller-->
+        <!--Changes View Controller-->
         <scene sceneID="gva-DM-Lk7">
             <objects>
-                <viewController id="ja0-0D-YFj" sceneMemberID="viewController">
+                <viewController id="ja0-0D-YFj" customClass="ChangesViewController" customModule="CafeCollectionSchmidt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zar-Ky-aVY">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8TT-Cc-gIT">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Editor Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVY-02-7Wt">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="168.33333333333334"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="43"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Menu Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvc-HZ-aBB">
+                                        <rect key="frame" x="0.0" y="168.33333333333334" width="393" height="33.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGw-G0-NI6">
+                                        <rect key="frame" x="0.0" y="202" width="393" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q7I-na-uf3">
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m26-sx-hKn">
+                                                <rect key="frame" x="275" y="0.0" width="118" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="q7I-na-uf3" firstAttribute="width" secondItem="kGw-G0-NI6" secondAttribute="width" multiplier="0.7" id="c6H-Jp-mzU"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emh-Wu-HJd">
+                                        <rect key="frame" x="0.0" y="236" width="393" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Enter">
+                                            <color key="baseBackgroundColor" red="0.78433070231958757" green="0.50333891390109886" blue="0.50701491548861533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addMenuAction:" destination="ja0-0D-YFj" eventType="touchUpInside" id="mKS-Tl-5wd"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Menu Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hd4-7Y-mZq">
+                                        <rect key="frame" x="0.0" y="270.33333333333331" width="393" height="168.33333333333331"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5M9-7F-TuF">
+                                        <rect key="frame" x="0.0" y="438.66666666666669" width="393" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnp-Js-wzP">
+                                        <rect key="frame" x="0.0" y="472.66666666666669" width="393" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Enter">
+                                            <color key="baseBackgroundColor" red="0.78433070230000002" green="0.50333891389999996" blue="0.5070149155" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteMenuAction:" destination="ja0-0D-YFj" eventType="touchUpInside" id="kFA-1K-hyi"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mek-K7-0rQ">
+                                        <rect key="frame" x="0.0" y="507" width="393" height="335"/>
+                                        <color key="backgroundColor" red="1" green="0.64174322439999998" blue="0.64643002500000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Hd4-7Y-mZq" firstAttribute="height" secondItem="8TT-Cc-gIT" secondAttribute="height" multiplier="0.2" id="CEO-Ql-Ivh"/>
+                                    <constraint firstItem="EVY-02-7Wt" firstAttribute="height" secondItem="8TT-Cc-gIT" secondAttribute="height" multiplier="0.2" id="Iti-aK-OJI"/>
+                                    <constraint firstItem="rnp-Js-wzP" firstAttribute="height" secondItem="8TT-Cc-gIT" secondAttribute="height" multiplier="0.0407759" id="XxV-v8-42i"/>
+                                    <constraint firstItem="emh-Wu-HJd" firstAttribute="height" secondItem="8TT-Cc-gIT" secondAttribute="height" multiplier="0.0407759" id="l94-kG-etG"/>
+                                    <constraint firstItem="Yvc-HZ-aBB" firstAttribute="height" secondItem="8TT-Cc-gIT" secondAttribute="height" multiplier="0.0399842" id="sCs-AB-BTp"/>
+                                    <constraint firstItem="5M9-7F-TuF" firstAttribute="height" secondItem="kGw-G0-NI6" secondAttribute="height" id="vLR-QB-O9u"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="flU-Me-XHq"/>
                         <color key="backgroundColor" red="1" green="0.64174322439822795" blue="0.64643002497436897" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="flU-Me-XHq" firstAttribute="bottom" secondItem="8TT-Cc-gIT" secondAttribute="bottom" id="5fN-uz-MI1"/>
+                            <constraint firstItem="8TT-Cc-gIT" firstAttribute="leading" secondItem="flU-Me-XHq" secondAttribute="leading" id="61x-eE-APg"/>
+                            <constraint firstItem="flU-Me-XHq" firstAttribute="trailing" secondItem="8TT-Cc-gIT" secondAttribute="trailing" id="7c7-UA-GBB"/>
+                            <constraint firstItem="8TT-Cc-gIT" firstAttribute="top" secondItem="flU-Me-XHq" secondAttribute="top" id="S0R-nb-h4Q"/>
+                            <constraint firstItem="flU-Me-XHq" firstAttribute="trailing" secondItem="8TT-Cc-gIT" secondAttribute="trailing" id="mhs-Rt-zRH"/>
+                            <constraint firstItem="8TT-Cc-gIT" firstAttribute="top" secondItem="flU-Me-XHq" secondAttribute="top" id="ur8-tm-6Lx"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0C9-ex-AQb"/>
+                    <connections>
+                        <outlet property="addMenuOutlet" destination="q7I-na-uf3" id="7sQ-c1-fMh"/>
+                        <outlet property="addPriceOutlet" destination="m26-sx-hKn" id="JwJ-M1-l4A"/>
+                        <outlet property="deleteItemOutlet" destination="5M9-7F-TuF" id="Oqe-g5-k1C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hge-2e-8Qv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1506" y="4"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

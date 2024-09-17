@@ -1,5 +1,11 @@
 import UIKit
 
+//creating parallel arrays
+var foodNames = ["Coffee","Tea","Bagel","Crossiant","Scone"]
+var foodPrices = [2.50,2.75,3.50,3.00,3.25]
+
+
+
 class ViewController: UIViewController {
 //Creating Outlets
     @IBOutlet weak var addOutlet: UIButton!
@@ -14,9 +20,6 @@ class ViewController: UIViewController {
 
 @IBOutlet weak var quantityOutlet: UITextField!
     
-    //creating parallel arrays
-    var foodNames = ["Coffee","Tea","Bagel","Crossiant","Scone"]
-    var foodPrices = [2.50,2.75,3.50,3.00,3.25]
     
     //creating variables
     var priceTotal = 0.00
@@ -100,7 +103,8 @@ class ViewController: UIViewController {
             cartOutlet.text += "\n Cart Total: $\(priceTotal) USD"
         }
         isThere = false
-        
+        itemNameOutlet.text = ""
+        quantityOutlet.text = ""
     
     }//end of add button
     

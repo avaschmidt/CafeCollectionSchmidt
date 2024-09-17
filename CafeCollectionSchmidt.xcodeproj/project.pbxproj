@@ -15,6 +15,7 @@
 		22940A7E2C91CADE009D61A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22940A7D2C91CADE009D61A6 /* Assets.xcassets */; };
 		22940A812C91CADE009D61A6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 22940A802C91CADE009D61A6 /* Base */; };
 		22A56C7C2C986AF200B02693 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A56C7B2C986AF100B02693 /* AdminViewController.swift */; };
+		22F486E22C99114B0025A47B /* ChangesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F486E12C99114B0025A47B /* ChangesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		22940A802C91CADE009D61A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22940A822C91CADE009D61A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22A56C7B2C986AF100B02693 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		22F486E12C99114B0025A47B /* ChangesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				22940A732C91CADC009D61A6 /* SceneDelegate.swift */,
 				22940A752C91CADC009D61A6 /* ViewController.swift */,
 				22A56C7B2C986AF100B02693 /* AdminViewController.swift */,
+				22F486E12C99114B0025A47B /* ChangesViewController.swift */,
 				22940A772C91CADC009D61A6 /* Main.storyboard */,
 				22940A7D2C91CADE009D61A6 /* Assets.xcassets */,
 				22940A7F2C91CADE009D61A6 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				22940A7C2C91CADC009D61A6 /* CafeCollectionSchmidt.xcdatamodeld in Sources */,
 				22940A722C91CADC009D61A6 /* AppDelegate.swift in Sources */,
 				22A56C7C2C986AF200B02693 /* AdminViewController.swift in Sources */,
+				22F486E22C99114B0025A47B /* ChangesViewController.swift in Sources */,
 				22940A742C91CADC009D61A6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
